@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Pattaya;
+  src: url("./fonts//Pattaya-Regular.ttf");
+}
+
+body {
+  font-family: Pattaya;
+  background-image: url("./assets//background.svg");
+  background-size: cover;
+  margin-top: 60px;
+  margin: 0 auto;
+}
+.home {
+  .rocket {
+    display: flex;
+    margin: 0 auto;
+    width: 180px;
+    height: 180px;
+    margin-top: 60px;
+    animation: wobble-ver-left 10.8s both infinite;
+  }
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  .hero {
+    width: 225px;
+    height: 225px;
+  }
+  h1 {
+    color: #94ccff;
+    font-size: 3.3rem;
+    margin-bottom: 0;
+  }
+  p {
+    color: #fffbff;
+    max-width: 445px;
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
+}
+.timers {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    color: #fffbff;
+    margin: 0;
+  }
+  .time {
+    display: flex;
+    color: #fffbff;
+    font-size: 2rem;
+    text-align: center;
+    .minutes {
+      background-color: rgba(75, 86, 129, 0.8);
+      padding: 20px;
+      border-radius: 25px;
+    }
+    .seconds {
+      background-color: rgba(75, 86, 129, 0.8);
+      padding: 20px;
+      border-radius: 25px;
+    }
+  }
+  span {
+    margin: 0px 10px;
+    align-self: center;
+  }
+}
+
+// call-to-action buttons
+.cta-btn {
+  font-family: Pattaya;
+  font-size: 1.3rem;
+  background: #ee1b24;
+  color: #fffbff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 60px;
+  cursor: pointer;
+  transition: 250ms;
+}
+.cta-btn:hover{
+  background: #7c2125;
+}
+.cta-btn2 {
+  font-family: Pattaya;
+  font-size: 1.3rem;
+  background: #1b30ee;
+  color: #fffbff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 60px;
+  cursor: pointer;
+  transition: 250ms;
+}
+.cta-btn2:hover{
+  background: #2f3ec2;
+}
+.cta-btn3 {
+  font-family: Pattaya;
+  font-size: 1.3rem;
+  background: #3bee1b;
+  color: #fffbff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 60px;
+  cursor: pointer;
+  transition: 250ms;
+}
+.cta-btn3:hover{
+  background: #3abd23;
+}
+
+// Animation keyframes
+@keyframes wobble-ver-left {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateY(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateY(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateY(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateY(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(-1.2deg);
+  }
+}
